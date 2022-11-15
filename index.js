@@ -90,7 +90,7 @@ var finances = [
 
 var tot = 0;
 var difference;
-var monthlyChanges = 0;
+var monthlyChanges = finances[0][1];
 
 
 
@@ -115,11 +115,10 @@ for (var i = 1; i < finances.length; i++) {
 
 //Greatest Increase
 
-console.log(difference)
 
 
 // Decrease
 
 
 
-console.log(`Financial Analsis\n----------------------------\nTotal Months: ${finances.length}\nTotal: $${tot}\nAverage Change: $${monthlyChanges}`)
+console.log(`Financial Analsis\n----------------------------\nTotal Months: ${finances.length}\nTotal: $${tot}\nAverage Change: $${monthlyChanges / finances.length}`)
